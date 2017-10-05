@@ -11,6 +11,8 @@
 			" ",
 		);
 		
-		echo preg_replace($pattern, $replacement, $argv[1])."\n";
+		$res = preg_replace($pattern, $replacement, $argv[1]);
+		if (strlen($res) > 0)
+			echo "$res\n";
 	}
 ?>
